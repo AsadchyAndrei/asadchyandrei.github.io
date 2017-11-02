@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async=""></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+        <!-- main-navigation--opened - меню открыто и появляется кнопка-крестик;
+        main-navigation--closed - меню закрыто и появляется кнопка-гамбургер -->
+        <button class="main-navigation__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="active">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+          <ul class="main-navigation__list logo-list">
+            <li class="logo-list__item">
+              <a href="index.html">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="">
+                </picture>
+              </a>
+            </li>
+          </ul>
+          <div class="main-navigation__bg-logo main-navigation__bg-logo--small">
+            <img src="img/text-sedona.svg" width="229" height="39" alt="">
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+      <div class="media">
+        <div class="media__subject">
+          <h2 class="media__title">Фото и видео</h2>
+          <p class="media__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+        <div class="media__item">
+          <a class="size-0" href="img/photo-sunset-desktop@2x.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img class="media__photo" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@1x.jpg 1x, img/photo-sunset-mobile@2x.jpg 2x" alt="">
+            </picture>
+          </a>
+          <div class="media__info">
+            <div class="box-photo">
+              <b class="media__description">Неродные просторы</b>
+              <p class="media__autor">Автор фото: Борис</p>
+            </div>
+            <b class="media__likes">1350</b>
+          </div>
+        </div>
+        <div class="media__item media__item--small">
+          <a class="size-0" href="img/photo-cactus-desktop@2x.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img class="media__photo" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@1x.jpg 1x, img/photo-cactus-mobile@2x.jpg 2x" alt="">
+            </picture>
+          </a>
+          <div class="media__info">
+            <div class="box-photo">
+              <b class="media__description">Местная растительность</b>
+              <p class="media__autor">Автор фото: Сергей</p>
+            </div>
+            <b class="media__likes">143</b>
+          </div>
+        </div>
+        <div class="media__item media__item--small">
+          <a class="size-0" href="img/photo-roads-desktop@2x.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+              <img class="media__photo" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@1x.jpg 1x, img/photo-roads-mobile@2x.jpg 2x" alt="">
+            </picture>
+          </a>
+          <div class="media__info">
+            <div class="box-photo">
+              <b class="media__description">Дорога на север</b>
+              <p class="media__autor">Автор фото: Петр</p>
+            </div>
+            <b class="media__likes">96</b>
+          </div>
+        </div>
+        <div class="media__item media__item--small">
+          <a class="size-0" href="img/photo-bridge-desktop@2x.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="media__photo" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@1x.jpg 1x, img/photo-bridge-mobile@2x.jpg 2x" alt="">
+            </picture>
+          </a>
+          <div class="media__info">
+            <div class="box-photo">
+              <b class="media__description">Мост дьявола</b>
+              <p class="media__autor">Автор фото: Антон</p>
+            </div>
+            <b class="media__likes">254</b>
+          </div>
+        </div>
+        <div class="media__subject media__subject--video">
+          <h2 class="media__title">Все еще сомневаетесь?</h2>
+          <p class="media__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <a class="size-0" href="img/video-desktop@2x.jpg">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img class="media__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x" alt="">
+          </picture>
+        </a>
+        <div class="video-controls">
+          <div class="video-controls__replay">
+          </div>
+          <div class="video-controls__track">
+            <div class="video-controls__cursor"></div>
+          </div>
+          <div class="video-controls__subtitles">
+          </div>
+          <div class="video-controls__fullscreen">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <b class="title">#visitSEDONA</b>
+      <ul class="social">
+        <li>
+          <a class="social__btn social__btn--twitter" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a class="social__btn social__btn--facebook" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="social__btn social__btn--youtube social__btn--last-child" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
+        </a>
+      </p>
+    </footer>
+
+  </body>
+</html>

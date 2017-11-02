@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async=""></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <nav class="main-navigation main-navigation--opened main-navigation--nojs">
+        <!-- main-navigation--opened - меню открыто и появляется кнопка-крестик;
+        main-navigation--closed - меню закрыто и появляется кнопка-гамбургер -->
+        <button class="main-navigation__toggle"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a class="active">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="https://htmlacademy.ru/">Html academy</a>
+            </li>
+          </ul>
+          <ul class="main-navigation__list logo-list">
+            <li class="logo-list__item">
+              <a href="index.html">
+                <picture>
+                  <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+                  <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
+                  <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="">
+                </picture>
+              </a>
+            </li>
+          </ul>
+          <div class="main-navigation__bg-logo main-navigation__bg-logo--small">
+            <img src="img/text-sedona.svg" width="229" height="39" alt="">
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="visually-hidden">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+      <div class="review">
+        <div class="review__subject">
+          <b class="review__title">Оставьте свой отзыв</b>
+          <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <form class="form" action="https://echo.htmlacademy.ru">
+          <div class="form-container form-container--personal">
+            <b class="form-container__title form-container__title--personal">Представьтесь:</b>
+            <label class="form__label-title">ИМЯ*:
+              <input class="form__input-text" type="text" name="firstname" placeholder="Петр">
+            </label>
+            <label class="form__label-title">Фамилия*:
+              <input type="text" class="form__input-text" name="lastname" placeholder="Иванов">
+            </label>
+            <label class="form__label-title">Отчество*:
+              <input type="text" class="form__input-text" name="patronymic" placeholder="Александрович">
+            </label>
+          </div>
+          <div class="form-container form-container--contacts">
+            <b class="form-container__title form-container__title--contacts">Контактная информация:</b>
+            <label class="form__label-title form__label-title--contacts" for="phone">Телефон*:</label>
+            <input type="text" class="form__input-text form__input-text--contacts" name="phone" id="phone" placeholder="Введите телефон">
+            <div class="form-icon form-icon--tel"></div>
+            <label for="email" class="form__label-title form__label-title--contacts">Электронная почта*:</label>
+            <input type="text" class="form__input-text form__input-text--contacts" name="email" id="email" placeholder="Введите e-mail">
+            <div class="form-icon form-icon--email"></div>
+          </div>
+          <div class="form-container form-container--impression">
+            <b class="form-container__title form-container__title--impression">Ваше Общее впечатление:</b>
+            <input type="radio" class="form__input-radio" name="impression" id="positive" checked="">
+            <label for="positive" class="form__label-value">Скорее положительное</label>
+            <input type="radio" class="form__input-radio" name="impression" id="negative">
+            <label for="negative" class="form__label-value">Скорее отрицательное</label>
+            <input type="radio" class="form__input-radio" name="impression" id="difficult">
+            <label for="difficult" class="form__label-value">Затрудняюсь ответить</label>
+          </div>
+          <div class="form-container form-container--attraction">
+            <b class="form-container__title form-container__title--attraction">Посещенные достопримечательности:</b>
+            <div class="container-association">
+              <input type="checkbox" class="form__input-checkbox" name="bridge" id="bridge" checked="">
+              <label for="bridge" class="form__label-value form__label-value--checkbox">Мост Дьявола</label>
+              <input type="checkbox" class="form__input-checkbox" name="park" id="park" checked="">
+              <label for="park" class="form__label-value form__label-value--checkbox">Слайд-парк</label>
+            </div>
+            <div class="container-association">
+              <input type="checkbox" class="form__input-checkbox" name="mountain" id="mountain">
+              <label for="mountain" class="form__label-value form__label-value--checkbox">Гора-Колокол</label>
+              <input type="checkbox" class="form__input-checkbox" name="cliffs" id="cliffs" checked="">
+              <label for="cliffs" class="form__label-value form__label-value--checkbox">Красные скалы</label>
+            </div>
+          </div>
+          <div class="form-container form-container--emotions">
+            <b class="form-container__title form-container__title--emotions">Опишите свои эмоции:</b>
+            <textarea name="text" id="text" class="form__text">Опишите подробно все свои восторги</textarea>
+          </div>
+          <button class="btn form__send" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+          <span class="required-fields">* — обязательные поля</span>
+        </form>
+<!-- Для открытия попапа нужно добавить блоку-обертке "modal-content" класс "modal-content--show" -->
+        <div class="modal-content">
+          <div class="popup-failure">
+            <b class="review__title review__title--popup">ЧТО-ТО ПОШЛО НЕ ТАК!</b>
+            <p class="review__text review__text--popup">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <button class="btn btn--popup-failure" type="button">OK</button>
+          </div>
+        </div>
+<!-- Для открытия попапа нужно добавить блоку-обертке "modal-content" класс "modal-content--show" -->
+        <div class="modal-content">
+          <div class="popup-success">
+            <b class="review__title review__title--popup-success">Ваш отзыв отправлен!</b>
+            <p class="review__text review__text--popup-success">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+            <div class="container-btn">
+              <button class="btn btn--popup-success" type="button">ЗАКРЫТЬ ОКНО</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <b class="title">#visitSEDONA</b>
+      <ul class="social">
+        <li>
+          <a class="social__btn social__btn--twitter" href="#">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a class="social__btn social__btn--facebook" href="#">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a class="social__btn social__btn--youtube social__btn--last-child" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
+        </a>
+      </p>
+    </footer>
+<!--
+  <script>
+    var link1 = document.querySelector(".form__send");
+    var popup1 = document.querySelector(".popup-success");
+    var btnPopupSuccess = document.querySelector(".btn--popup-success");
+    var btnPopupFailure = document.querySelector(".btn--popup-failure");
+
+
+    link1.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup1.classList.add("modal-content-show");
+    });
+
+    btnPopupSuccess.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup1.classList.remove("modal-content-show");
+    });
+  </script>
+-->
+  </body>
+</html>
