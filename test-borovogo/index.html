@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async=""></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Брестский Стандарт</title>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <nav class="main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item main-menu__item--active">
+            <a>О компании</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Партнёрам</a>
+          </li>
+          <li class="main-menu__item">
+            <a href="#">Контакты</a>
+          </li>
+          <li class="main-menu__item main-menu__item--search">
+            <form class="form-search" action="php.php">
+              <input type="search" name="search" id="search" placeholder="Введите запрос...">
+              <label for="search">
+                <img src="img/magnifying-glass.png" alt="Найти">
+              </label>
+            </form>
+          </li>
+        </ul>
+        <div class="logo">
+          <a href="index.html"><img src="img/logo.png" weight="167" height="98" alt="Брестский Стандарт"></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-sliders" id="main-slider">
+      <ul class="slider">
+        <li class="slider__item" id="slider__item-1">
+          <div class="slider__item-content">
+            <img src="img/desk_meat.png" width="297" height="390" alt="">
+            <div class="slider__description">
+              <h1 class="main-title">Ваш выбор,<br> наша работа!</h1>
+              <a class="btn" href="#"><span>Узнать подробнее<span></span></span></a>
+            </div>
+          </div>
+        </li>
+        <li class="slider__item" id="slider__item-2">
+          <div class="slider__item-content">
+            <img src="img/desk_meat.png" width="297" height="390" alt="">
+            <div class="slider__description">
+              <h1 class="main-title">Ваш выбор,<br> наша работа!</h1>
+              <a class="btn" href="#"><span>Узнать подробнее<span></span></span></a>
+            </div>
+          </div>
+        </li>
+        <li class="slider__item" id="slider__item-3">
+          <div class="slider__item-content">
+            <img src="img/desk_meat.png" width="297" height="390" alt="">
+            <div class="slider__description">
+              <h1 class="main-title">Ваш выбор,<br> наша работа!</h1>
+              <a class="btn" href="#"><span>Узнать подробнее<span></span></span></a>
+            </div>
+          </div>
+        </li>
+        <li class="slider__item" id="slider__item-4">
+          <div class="slider__item-content">
+            <img src="img/desk_meat.png" width="297" height="390" alt="">
+            <div class="slider__description">
+              <h1 class="main-title">Ваш выбор,<br> наша работа!</h1>
+              <a class="btn" href="#"><span>Узнать подробнее<span></span></span></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="slider-nav">
+        <button class="slider-nav__back" type="button">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="slider-nav__next" type="button">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+        <div class="slider-nav__main">
+          <a class="current">
+            <img src="img/elips-red.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/elips-gray.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/elips-gray.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="img/elips-gray.svg" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <p class="copyright">&#9400; 2017 Охота Берестейская</p>
+    </div>
+  </footer>
+</body>
+</html>
